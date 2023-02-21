@@ -1,1 +1,51 @@
 /* Denna fil skall innehålla din CSS kod */
+body{
+    margin: 0;
+    
+}
+
+#wrapper{
+    grid-template-areas: "hd"
+    "s1";
+}
+
+header{
+    grid-area: hd;
+    background-color: aqua;
+}
+
+header nav{
+    grid-area: na;
+    background-color: aquamarine;
+    display: flex;
+    
+}
+
+#section1{
+    grid-area: s1;
+    background-color: beige;
+}
+
+#section2{
+    grid-area: s2;
+    background-color: blue;
+}
+
+#section3{
+    grid-area: s3;
+    background-color: blueviolet;
+}
+
+aside{
+    grid-area: as;
+    background-color: brown;
+}
+
+footer{
+    grid-area: ft;
+    background-color: cadetblue;
+}
+
+@media screen and (max-width:600px){
+
+}
