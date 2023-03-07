@@ -1,39 +1,73 @@
 /* Denna fil skall innehålla din CSS kod */
+@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
 body{
     margin: 0;
     
 }
 
 #wrapper{
+    border: 1px solid #000;
+    
+    display: grid;
     grid-template-areas: "hd"
-    "s1";
+    "s1"
+    "as"
+    "ft";
 }
 
 header{
     grid-area: hd;
     background-color: aqua;
+    display: flex;
+}
+
+header h1{
 }
 
 header nav{
     grid-area: na;
     background-color: aquamarine;
+    /* display: flex; */
+}
+
+nav ul li {
+    list-style: none;
     display: flex;
-    
+}
+
+#box{
+    display: flex;
+    justify-content: center;
 }
 
 #section1{
     grid-area: s1;
     background-color: beige;
+    border-radius: 1rem;
+    border-bottom: solid #000 ;
+    height: 400px;
+    width: 80%;
+    /* display: grid;
+    grid-template-areas: "s2 none s3"; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-#section2{
+#section1 #section2{
     grid-area: s2;
     background-color: blue;
+    height: 300px;
+    width: 45%;
+    border-radius: 1rem;
 }
 
-#section3{
+#section1 #section3{
     grid-area: s3;
     background-color: blueviolet;
+    height: 300px;
+    width: 45%;
+    border-radius: 1rem;
 }
 
 aside{
