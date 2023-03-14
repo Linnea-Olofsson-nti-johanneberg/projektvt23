@@ -2,12 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
 body{
     margin: 0;
-    
+    background-color: #000080;
 }
 
 #wrapper{
-    border: 1px solid #000;
-    
+    border: 1px solid #000; 
     display: grid;
     grid-template-areas: "hd"
     "s1"
@@ -32,7 +31,7 @@ header nav{
 
 nav ul li {
     list-style: none;
-    display: flex;
+    display: flex; 
 }
 
 #box{
@@ -42,9 +41,8 @@ nav ul li {
 
 #section1{
     grid-area: s1;
-    background-color: beige;
-    border-radius: 1rem;
-    border-bottom: solid #000 ;
+    /* background-color: beige; */
+    border-bottom: solid rgb(255, 255, 255) ;
     height: 400px;
     width: 80%;
     /* display: grid;
@@ -68,11 +66,19 @@ nav ul li {
     height: 300px;
     width: 45%;
     border-radius: 1rem;
+
+}
+
+#box2{
+    display: flex;
+    justify-content: center;
 }
 
 aside{
     grid-area: as;
     background-color: brown;
+    height: 400px;
+    width: 80%;
 }
 
 footer{
