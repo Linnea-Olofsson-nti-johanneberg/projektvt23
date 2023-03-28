@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
 body{
     margin: 0;
-    background-color: #000080;
+    background-color: #080808;
 }
 
 #wrapper{
@@ -16,8 +16,10 @@ body{
 
 header{
     grid-area: hd;
-    background-color: aqua;
+    background-color: #410205;
     display: flex;
+    color: white;
+    justify-content: space-between;
 }
 
 header h1{
@@ -25,13 +27,30 @@ header h1{
 
 header nav{
     grid-area: na;
-    background-color: aquamarine;
+    background-color: #410205;
     /* display: flex; */
 }
 
+nav{
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
 nav ul li {
+    font-size: larger;
     list-style: none;
+    margin: 1rem 0.5rem 1rem 0.5rem;
     display: flex; 
+}
+
+nav ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none; 
 }
 
 #box{
@@ -54,7 +73,7 @@ nav ul li {
 
 #section1 #section2{
     grid-area: s2;
-    background-color: blue;
+    background-color: #be192c;
     height: 300px;
     width: 45%;
     border-radius: 1rem;
@@ -76,16 +95,60 @@ nav ul li {
 
 aside{
     grid-area: as;
-    background-color: brown;
+    background: rgb(8,8,8);
+    background: linear-gradient(180deg, rgba(8,8,8,1) 0%, rgba(129,4,13,1) 100%);
+    color: white;
     height: 400px;
     width: 80%;
+    margin: 1rem;
+    border-radius: 1rem;
 }
 
 footer{
     grid-area: ft;
-    background-color: cadetblue;
+    background-color: #81040d;
+    border-top: 1px solid rgb(255, 255, 255) ;
+    height: 100px;
+}
+
+#AndraSida{
+    display: grid;
+    grid-template-areas: "hd" "sA" "as" "ft";
+}
+
+#sectionA{
+    grid-area: sA;
+    border-bottom: solid rgb(255, 255, 255) ;
+    height: 450px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sectionA #sectionB{
+    grid-area: sB;
+    background: rgb(8,8,8);
+    background: linear-gradient(153deg, rgba(8,8,8,1) 0%, rgba(78,2,7,1) 50%, rgba(190,25,44,1) 100%);
+    color: white;
+    height: 400px;
+    width: 80%;
+    margin: 1rem;
+    border-radius: 1rem;
 }
 
 @media screen and (max-width:600px){
+    #hamburger{
+        height: 1.5rem;
+        width: 2.2rem;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+
+    #hamburger div{
+        border: 2px solid rgb(255, 255, 255);
+        margin: 0.3rem;
+    }
 
 }
