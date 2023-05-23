@@ -202,12 +202,11 @@ footer{
 
     #section1 #section3{
         grid-area: s3;
-        height: 0.75rem;
-        width: 0.75rem;
+
     }
 
     #section1 #section3 img{
-        object-fit: cover;
+        object-fit:contain;
     }
 
 }
